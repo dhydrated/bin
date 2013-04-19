@@ -20,4 +20,6 @@ class CommandExecutor:
 		if self.arguments.isUpdate():
 			self.command = "sudo apt-get update && " + self.command
 
+		self.logger.info(self.command)
+
 		os.system(self.command)

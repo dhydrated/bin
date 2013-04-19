@@ -19,9 +19,6 @@ class ArgumentParser:
                   help="Print messages to stdout")
 
 		(self.options, self.args) = self.parser.parse_args()
-		
-		print(self.options)
-		print(self.args)
 	
 	def isVerbose(self):
 		return self.options.verbose
@@ -40,7 +37,6 @@ class ArgumentParser:
 def main():
 	arguments = ArgumentParser()
 	arguments.parse()
-	arguments.printMe()
 
 	logger = Logger(arguments.isVerbose())
 

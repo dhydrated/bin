@@ -1,3 +1,4 @@
+import datetime
 
 class Logger:
 	"""Script logger"""
